@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root{
     --cor-fundo: green;
-    
+    --cor-card: rgb(11, 211, 11);
+
+    --font-principal: "Montserrat", sans-serif;
 }
 
 *{
@@ -9,4 +13,73 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--cor-fundo);
+}
+
+main{
+    width: 90%;
+    height: 100%;
+    flex-direction: column;
+
+    gap: 10px;
+
+}
+.card{
+    width: 33%;
+    height: 55%;
+    background-color: var(--cor-card);
+
+    justify-content: center;
+    padding: 5px;
+    border-radius: 20px;
+    align-items: center;
+} 
+
+.parte1{
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    gap: 10px;
+}
+
+label{
+    color: white;
+    font-family: var(--font-principal);
+    text-align: center;
+}
+
+input, select{
+    margin-bottom: 10px;
+    height: 15px;
+    padding: 5px;
+}
+
+.card input{
+    width: 90%;
+    border: none;
+    border-radius: 20px;
+
+}
+
+.card select{
+    width: 90%;
+    border: none;
+    border-radius: 20px;
+}
+
+.min-max{
+    flex-direction: row;
+    gap: 10px;
+}
+
+.lb-ipt{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
