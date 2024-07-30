@@ -17,7 +17,7 @@
 
 body{
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     background-color: var(--cor-fundo);
 }
 
@@ -31,7 +31,7 @@ main{
 }
 .card{
     width: 33%;
-    height: 55%;
+    height: 400px;
     background-color: var(--cor-card);
 
     justify-content: center;
@@ -47,16 +47,42 @@ main{
     gap: 10px;
 }
 
+
+
+.parte2{
+    width: 100%;
+    height: 150px;
+    background-color: var(--cor-card);
+    border-radius: 20px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.parte3{
+    width: ;
+}
+
+.img-org{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
 label{
     color: white;
     font-family: var(--font-principal);
     text-align: center;
 }
 
-input, select{
+input{
     margin-bottom: 10px;
     height: 15px;
     padding: 5px;
+}
+select{
+    height: 25px;
 }
 
 .card input{
