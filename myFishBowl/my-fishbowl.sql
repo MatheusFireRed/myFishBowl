@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Tempo de geração: 24-Jul-2024 às 20:55
+-- Tempo de geração: 30-Jul-2024 às 21:18
 -- Versão do servidor: 10.4.32-MariaDB
 -- versão do PHP: 8.2.12
 
@@ -65,6 +65,13 @@ CREATE TABLE `genero` (
   `genero` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Extraindo dados da tabela `genero`
+--
+
+INSERT INTO `genero` (`id`, `genero`) VALUES
+(1, 'Perciformes');
+
 -- --------------------------------------------------------
 
 --
@@ -115,7 +122,6 @@ CREATE TABLE `Peixes` (
   `temperatura_min` int(3) NOT NULL,
   `temperatura_max` int(3) NOT NULL,
   `litragem` text NOT NULL,
-  `plantados` varchar(3) NOT NULL,
   `tamanho` text NOT NULL,
   `adequado_plantado` text NOT NULL,
   `manutencao` varchar(10) NOT NULL,

@@ -1,14 +1,16 @@
 <?php
-$dsn = 'mysql:host=localhost;dbname=my-fishbowl';
-$usuario = 'root';
-$senha = '';
 
-try {
-    $pdo = new PDO($dsn, $usuario, $senha);
-    // Configura o PDO para lançar exceções em caso de erro
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    echo "Conexão bem-sucedida!";
-} catch (PDOException $e) {
-    echo 'Erro: ' . $e->getMessage();
-}
+    $servername = "localhost";
+    $username   = "root";
+    $password   = "";
+    $dbname     = "my-fishbowl";
+
+    $conn = new mysqli($servername, $username, $password, $dbname);
+
+    if($conn->conect_error){
+        die("Conexão falhou: " . $conn->conect_error);
+    }else{
+        echo 'Conexão feita com sucesso!';
+    }
+
 ?>
